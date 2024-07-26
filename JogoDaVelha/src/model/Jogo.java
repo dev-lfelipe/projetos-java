@@ -32,7 +32,7 @@ public class Jogo {
         System.out.println("=======================");
         System.out.println("Quem será o Jogador 2? ");
         //jogador2 = jogada.nextLine()
-        if(escolherJogador() == 2){
+        if(escolherJogador() == 1){
             this.jogador2 = new Humano(2);
         }else{
             this.jogador2 = new Computador(2);
@@ -68,7 +68,7 @@ public class Jogo {
             }
 
             if (tabuleiro.tabuleiroCompleto()) {
-                System.out.println("O jogo deu velha!");
+                System.out.println("\nO jogo deu velha!");
                 return false;
             }
 
@@ -78,9 +78,9 @@ public class Jogo {
             return true;
         }else{
             if (ganhou() == -1) {
-                System.out.println("O " + vez() + "ganhou!");
+                System.out.println("O Jogador 1 ganhou!");
             }else{
-                System.out.println("O " + vez() + "ganhou!");
+                System.out.println("O Jogador 2 ganhou!");
             }
 
             return false;
@@ -88,7 +88,7 @@ public class Jogo {
     } 
 
     public int vez(){
-        if(vez%2 == 1)
+        if(vez % 2 == 1)
             return 1;
         else
             return 2;

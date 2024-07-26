@@ -3,6 +3,10 @@ package model.tabuleiro;
 public class Tabuleiro {
     private int[][] tabuleiro = new int[3][3];
 
+    public Tabuleiro(){
+        zerarTabuleiro();
+    }
+
     public void zerarTabuleiro(){
         for(int linha = 0; linha < 3; linha++){
             for(int coluna = 0; coluna < 3; coluna++){
@@ -16,17 +20,17 @@ public class Tabuleiro {
         for(int linha = 0; linha < 3; linha++){
             for(int coluna = 0; coluna < 3; coluna++){
                 if (tabuleiro[linha][coluna] == -1) {
-                    System.out.println(" X ");
+                    System.out.print(" X ");
                 }
                 if (tabuleiro[linha][coluna] == 1) {
-                    System.out.println(" O ");
+                    System.out.print(" O ");
                 }
-                if (coluna == 0 || coluna == 0) {
-                    System.out.println("  ");
+                if (tabuleiro[linha][coluna] == 0) {
+                    System.out.print("  ");
                 }
 
                 if (coluna == 0 || coluna == 1) {
-                    System.out.println(" | ");
+                    System.out.print("|");
                 }
             }
             System.out.println();
@@ -37,7 +41,7 @@ public class Tabuleiro {
         return tabuleiro[tentativa[0]][tentativa[1]];
     }
     
-    public void setPosicao(int tentativa[], int jogador){
+    public void setPosicao(int[] tentativa, int jogador){
         if (jogador == 1) {
             tabuleiro[tentativa[0]][tentativa[1]] = -1;
         }else{
@@ -79,7 +83,7 @@ public class Tabuleiro {
             return 1;
         }
         if (tabuleiro[0][2] + tabuleiro[1][1] + tabuleiro[2][0] == 3) {
-            return 1;
+            return -1;
         }
         if (tabuleiro[0][2] + tabuleiro[1][1] + tabuleiro[2][0] == 3) {
             return 1;
