@@ -43,7 +43,7 @@ public class Humano extends Jogador {
             tentativa[0]--;
             tentativa[1]--;
 
-            if (checaTentativa(tentativa, tabuleiro)) {
+            if (!checaTentativa(tentativa, tabuleiro)) {
                 System.out.println("Esse local já está preenchido! Jogue novamente.");
             }
         }while(!checaTentativa(tentativa, tabuleiro));

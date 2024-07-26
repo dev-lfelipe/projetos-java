@@ -45,7 +45,7 @@ public class Jogo {
             System.out.println("De que tipo será o jogo?\n");
             System.out.println("1 - Humano x Humano");
             System.out.println("2 - Humano x Computador\n");
-            System.out.println("Escolha: ");
+            System.out.print("Escolha: ");
             opcao = jogada.nextInt(); 
             if (opcao != 1 && opcao != 2) {
                 System.out.println("Essa opção não existe! Escolha novamente");
