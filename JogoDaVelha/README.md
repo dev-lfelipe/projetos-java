@@ -1,18 +1,8 @@
-## Getting Started
+# Projeto 1 - Jogo da Velha
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## Esse projeto está em desenvolvimento!
 
-## Folder Structure
+Esse projeto de jogo da velha foi replicado para que eu possa o aprimorar utilizando salvamento de jogos ganhos (por exemplo) e a opção de jogar contra a máquina.
+O código que serviu de base para que esse projeto seja feito está presente no site <a href="https://www.javaprogressivo.net/2012/10/Como-fazer-um-Jogo-da-Velha-em-Java.html">Java Progressivo</a>.
 
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+A cada atualização colocarei nesse README o que foi aprimorado e como foi aprimorado.
