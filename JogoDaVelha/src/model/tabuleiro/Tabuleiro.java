@@ -8,7 +8,6 @@ public class Tabuleiro {
             for(int coluna = 0; coluna < 3; coluna++){
                 tabuleiro[linha][coluna] = 0;
             }
-
         }
     }
 
@@ -22,9 +21,10 @@ public class Tabuleiro {
                 if (tabuleiro[linha][coluna] == 1) {
                     System.out.println(" O ");
                 }
-                if (tabuleiro[linha][coluna] == 0) {
-                    
+                if (coluna == 0 || coluna == 0) {
+                    System.out.println("  ");
                 }
+
                 if (coluna == 0 || coluna == 1) {
                     System.out.println(" | ");
                 }
